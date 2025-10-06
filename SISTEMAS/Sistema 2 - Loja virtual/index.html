@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <title>Game Store</title>
+</head>
+<body>
+    <nav>
+        <ul>
+            
+            <li><a href="home">Home</a></li>
+            <li><a href="fac">Fac</a></li>
+            <li><a href="sac">Sac</a></li>
+            <li><a href="contatos"> Contatos</a></li>
+          </ul>
+        
+    </nav>
+    <div id="carrossel" class="carrossel">
+        <div class="slides">
+            <div class="slide active"><img src="img/banner1.jpg" alt="Imagem 1"></div>
+            <div class="slide"><img src="img/banner2.jpg" alt="Imagem 2"></div>
+            <div class="slide"><img src="img/banner2.jpg" alt="Imagem 3"></div>
+            <div class="slide"><img src="img/banner3.jpg" alt="Imagem 4"></div>
+        </div>
+        <button class="prev">❮</button>
+        <button class="next">❯</button>
+    </div>
+    
+    <h1>
+        Cátalogo de Produtos
+    </h1>
+
+    
+
+    <div class="produtos-container">
+
+        <div class="produtos-container">
+        <div class="produto">
+            <div class="imagem"><img src="img/swt 2.png" alt="Switch 2"></div>
+            <div class="descricao">Switch 2 - Console portátil de última geração</div>
+            <div class="preco">R$4.500</div>
+            <button class="botao-carrinho">Adicionar carrinho</button>
+        </div>
+
+        <div class="produto">
+            <div class="imagem"><img src="img/ps5.png" alt="PlayStation 5"></div>
+            <div class="descricao">PlayStation 5 - Potência e performance para jogos</div>
+            <div class="preco">R$6.000</div>
+            <button class="botao-carrinho">Adicionar carrinho</button>
+        </div>
+
+        <div class="produto">
+            <div class="imagem"><img src="img/xbox s.png" alt="Xbox Series X"></div>
+            <div class="descricao">Xbox Series X - Experiência imersiva em 4K</div>
+            <div class="preco">R$5.000</div>
+            <button class="botao-carrinho">Adicionar carrinho</button>
+        </div>
+
+        <div class="produto">
+            <div class="imagem"><img src="img/fone.png" alt="Headset Gamer"></div>
+            <div class="descricao">Headset - Som imersivo com microfone</div>
+            <div class="preco">R$350</div>
+            <button class="botao-carrinho">Adicionar carrinho</button>
+        </div>
+
+        <div class="produto">
+            <div class="imagem"><img src="img/Monitor.png" alt="Monitor Gamer"></div>
+            <div class="descricao">Monitor Gamer 144Hz - Resposta rápida para jogos</div>
+            <div class="preco">R$1.800</div>
+            <button class="botao-carrinho">Adicionar carrinho</button>
+        </div>
+
+        <div class="produto">
+            <div class="imagem"><img src="img/Teclado.png" alt="Teclado Mecânico"></div>
+            <div class="descricao">Teclado Mecânico RGB - Conforto e estilo</div>
+            <div class="preco">R$450</div>
+            <button class="botao-carrinho">Adicionar carrinho</button>
+        </div>
+
+        <div class="produto">
+            <div class="imagem"><img src="img/mouse.png" alt="Mouse Gamer"></div>
+            <div class="descricao">Mouse Gamer - Alta precisão para FPS</div>
+            <div class="preco">R$200</div>
+            <button class="botao-carrinho">Adicionar carrinho</button>
+        </div>
+
+        <div class="produto">
+            <div class="imagem"><img src="img/notebook.png" alt="Notebook Gamer"></div>
+            <div class="descricao">Notebook Gamer - RTX 4060, 16GB RAM, SSD 1TB</div>
+            <div class="preco">R$8.500</div>
+            <button class="botao-carrinho">Adicionar carrinho</button>
+        </div>
+
+        <div class="produto">
+            <div class="imagem"><img src="img/controle.png" alt="Controle Xbox"></div>
+            <div class="descricao">Controle Sem Fio Xbox - Conforto e precisão</div>
+            <div class="preco">R$350</div>
+            <button class="botao-carrinho">Adicionar carrinho</button>
+        </div>
+
+        <div class="produto">
+            <div class="imagem"><img src="img/Cadeira.png" alt="Cadeira Gamer"></div>
+            <div class="descricao">Cadeira Gamer - Ergonomia e estilo</div>
+            <div class="preco">R$1.200</div>
+            <button class="botao-carrinho">Adicionar carrinho</button>
+        </div>
+
+        <div class="produto">
+            <div class="imagem"><img src="img/Placadevideo.png" alt="Placa de Vídeo"></div>
+            <div class="descricao">Placa de Vídeo RTX 4070 - Desempenho superior</div>
+            <div class="preco">R$4.800</div>
+            <button class="botao-carrinho">Adicionar carrinho</button>
+        </div>
+
+        <div class="produto">
+            <div class="imagem"><img src="img/ssd.png" alt="SSD 1TB NVMe"></div>
+            <div class="descricao">SSD 1TB NVMe - Velocidade de leitura extrema</div>
+            <div class="preco">R$700</div>
+            <button class="botao-carrinho">Adicionar carrinho</button>
+        </div>
+    </div>
+        </div>
+
+    
+    <button id="btn-carrinho" aria-label="Abrir carrinho">
+    🛒
+            <span id="contador-quantidade">0</span>
+    </button>
+
+    <aside id="carrinho-lateral" aria-label="Carrinho de compras">
+
+            <h2>Seu Carrinho</h2>
+            <div id="itens-carrinho"></div>
+            <div id="total-carrinho">Total: R$ 0,00</div>
+            <button id="btn-finalizar">Finalizar Compra</button>
+
+    </aside>
+
+</body>
+</html>
