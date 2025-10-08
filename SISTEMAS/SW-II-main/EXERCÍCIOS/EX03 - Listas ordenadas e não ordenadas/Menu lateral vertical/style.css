@@ -1,0 +1,39 @@
+* {
+    font-family: Arial, sans-serif; /*TIPO DE FONTE*/
+    margin: 0; /*ESPAÇO DE MARGEM DA PÁGINA*/
+    padding: 0; /*DISTÂNCIA ENTRE CONTEÚDO E BORDAS */
+}
+
+nav {
+    background-color: blueviolet; /*COR DO FUNDO*/
+    color: white; /*COR DA LETRA*/
+    width: 250px; /*LARGURA DO MENU*/
+    height: 100%; /*ALTURA TOTAL DO MENU*/
+    position: fixed; /*O ELEMENTO FICARÁ FIXO NA TELA - À ESQUERDA DA PÁGINA*/
+    top: 0; /*GARANTE QUE O NAV FICARÁ SEMPRE ALINHADO AO TOPO*/
+    left: 0; /*GARANTE QUE O NAV FICARÁ SEMPRE ALINHADO À ESQUERDA*/
+}
+
+nav ul {
+    list-style: none; /*RETIRA O ÍCONE DO ITEM DA LISTA*/
+}
+
+nav li {
+    padding: 15px; /*ESPAÇAMENTO INTERNO AO REDOR DO TEXTO*/
+    text-align: center; /*CENTRALIZA O TEXTO DENTRO DA LI*/
+}
+
+nav li:hover {
+    background-color: black; /*MUDA A COR DO FUNDO AO PASSAR POR CIMA*/
+}
+
+nav a {
+    color: white; /*COR DO TEXTO BRANCA*/
+    text-decoration: none; /*RETIRA O SUBLINHADO DE LINK*/
+}
+
+main {
+    padding: 20px; /*ESPAÇAMENTO INTERNO GARANTINDO QUE O CONTEÚDO NÃO FIQUE COLADO NAS BORDAS*/
+    margin-left: 250px; /*DISTÂNCIA EVITANDO QUE O CONTEÚDO FIQUE ATRÁS DO MENU*/
+}
+
