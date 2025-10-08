@@ -16,23 +16,20 @@ h1 {
   margin-bottom: 30px;
 }
 
-/* grade da galeria */
+/* Grade da galeria */
 .galeria {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
-  max-width: 650px;
+  max-width: 900px;
   margin: 0 auto;
 }
 
-/* cartão */
+/* Cartão */
 .cartao-foto {
   background: #fff;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
   overflow: hidden;
   transition: transform 0.2s ease;
 }
@@ -47,16 +44,15 @@ h1 {
   border-radius: 10px 10px 0 0;
 }
 
-/* área das ações */
+/* Área das ações */
 .acoes {
   display: flex;
   align-items: center;
-  justify-content: center;
-  gap: 20px;
+  justify-content: space-between;
   padding: 12px 16px;
   background-color: blue;
   border-top: 1px solid blue;
-  border-radius: 0 0 10px 10px;
+  color: white;
 }
 
 .grupo-curtir,
@@ -64,7 +60,6 @@ h1 {
   display: flex;
   align-items: center;
   gap: 6px;
-  color: white;
 }
 
 .acoes button {
@@ -85,3 +80,55 @@ h1 {
   color: red;
 }
 
+/* Comentários */
+.secao-comentarios {
+  display: none;
+  flex-direction: column;
+  padding: 16px;
+  border-top: 1px solid #eee;
+}
+
+.secao-comentarios.ativa {
+  display: flex;
+}
+
+.entrada-comentario {
+  margin-top: 10px;
+  padding: 8px;
+  border: 1px solid #eee;
+  border-radius: 5px;
+}
+
+.botao-adicionar-comentario {
+  margin-top: 10px;
+  padding: 8px 12px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  align-self: flex-start;
+}
+
+.botao-adicionar-comentario:hover {
+  background-color: #0056b3;
+}
+
+.lista-comentarios {
+  list-style: none;
+  margin-top: 10px;
+  padding-left: 0;
+}
+
+.lista-comentarios li {
+  background-color: #f0f0f0;
+  padding: 6px 10px;
+  border-radius: 5px;
+  margin-bottom: 6px;
+}
+
+.contador-curtidas,
+.contador-comentarios {
+  font-size: 14px;
+  user-select: none;
+}
